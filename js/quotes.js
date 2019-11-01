@@ -1,4 +1,4 @@
-// A collection of quotes to display to the viewer
+// A collection of quotes to display to the viewer when
 
 let quotes = [
   {
@@ -30,15 +30,11 @@ let quotes = [
   },
   {
     quote: "Inside every cynical person, there is a disappointed idealist.",
-    source: "George Carlin",
-    citation: "",
-    year: ""
+    source: "George Carlin"
   },
   {
-    quote: "",
-    source: "",
-    citation: "",
-    year: ""
+    quote: "If you come to a fork in the road, take it.",
+    source: "Yogi Bera"
   },
   {
     quote: "",
