@@ -1,6 +1,10 @@
+// Reload new quote after 20 seconds.
+
+let interval = window.setInterval(printQuote, 20000);
+
 // Array of background colors
 
-let bgcolors = [
+let bgColors = [
   "#5e4491",
   "#3177ab",
   "#8f7952",
@@ -13,18 +17,20 @@ let bgcolors = [
   "#78100d"
 ];
 
+// Picks a random background color from bgcolors
+
 function pickRandombgColor() {
   return (document.body.style.backgroundColor =
-    bgcolors[Math.floor(Math.random() * bgcolors.length)]);
+    bgColors[Math.floor(Math.random() * bgColors.length)]);
 }
 
-// Function that generates a random quote from quotes array in quotes.js
+// Generates a random quote from quotes array in quotes.js
 
 function getRandomQuote() {
   return quotes[Math.floor(Math.random() * quotes.length)];
 }
 
-// Function that prints random quote to index.html
+// Prints random quote to index.html and changes background
 
 function printQuote() {
   let randomQuote = getRandomQuote();
@@ -47,8 +53,6 @@ function printQuote() {
   document.getElementById("quote-box").innerHTML = html;
   pickRandombgColor();
 }
-
-function reload() {}
 
 // Click Event listener, loads quote when button is pushed.
 
