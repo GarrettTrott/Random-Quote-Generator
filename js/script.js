@@ -1,3 +1,7 @@
+// Array of background colors
+
+let bgcolors = [];
+
 // Function that generates a random quote from quotes array in quotes.js
 
 function getRandomQuote() {
@@ -20,16 +24,17 @@ function printQuote() {
 
   html += `</p>`;
 
+  if (randomQuote.tags) {
+    html += `<p class="tags">${randomQuote.tags}</p>`;
+  }
+
   document.getElementById("quote-box").innerHTML = html;
 }
 
-function reload {
-
-}
+function reload() {}
 
 // Click Event listener, loads quote when button is pushed.
 
 document
   .getElementById("load-quote")
   .addEventListener("click", printQuote, false);
-
