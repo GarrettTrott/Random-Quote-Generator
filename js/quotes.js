@@ -54,5 +54,18 @@ let quotes = [
       "The imagination is the goal of history. I see culture as an effort to literally realize our collective dreams.",
     source: "Terence McKenna",
     tags: "Culture"
+  },
+  {
+    quote: "Natural selection is anything but random.",
+    source: "Richard Dawkins",
+    tags: "Science"
+  },
+  {
+    quote:
+      "On a long enough time line, the survival rate for everyone drops to zero.",
+    source: "Chuck Palahniuk",
+    citation: "Fight Club",
+    year: "1996",
+    tags: "Culture"
   }
 ];

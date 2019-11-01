@@ -1,6 +1,22 @@
 // Array of background colors
 
-let bgcolors = [];
+let bgcolors = [
+  "#5e4491",
+  "#3177ab",
+  "#8f7952",
+  "#0a4041",
+  "#299432",
+  "000000",
+  "#6397d3",
+  "#ad545a",
+  "#2a3746",
+  "#78100d"
+];
+
+function pickRandombgColor() {
+  return (document.body.style.backgroundColor =
+    bgcolors[Math.floor(Math.random() * bgcolors.length)]);
+}
 
 // Function that generates a random quote from quotes array in quotes.js
 
@@ -29,6 +45,7 @@ function printQuote() {
   }
 
   document.getElementById("quote-box").innerHTML = html;
+  pickRandombgColor();
 }
 
 function reload() {}
